@@ -1,0 +1,7 @@
+# User configuration
+SENDER_EMAIL = ''
+SENDER_NAME = ''
+PASSWORD = ''
+
+RECEIVER_EMAIL = ''
+RECEIVER_NAME = ''
