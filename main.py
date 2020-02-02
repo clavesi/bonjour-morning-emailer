@@ -2,7 +2,8 @@ import os
 from flask import Flask
 
 app = Flask(__name__)
-port = '5000'
+port = int(os.environ["PORT"])
+print(port)
 
 @app.route('/')
 def callScripts():
