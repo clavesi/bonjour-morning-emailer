@@ -35,7 +35,7 @@ def ff():
     soup = BeautifulSoup(page.text, 'html.parser')
 
     # Get fun fact
-    fun_fact = soup.find(class_="entry-content herald-entry-content")
+    fun_fact = soup.find('ol')
     facts = fun_fact.find_all('li')
 
     cell = facts[randint(0, len(facts)-1)].text
