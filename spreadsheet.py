@@ -1,5 +1,8 @@
 import gspread, pprint, scraper, settings, time
 from oauth2client.service_account import ServiceAccountCredentials
+import pprint
+import scraper
+import time
 
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
